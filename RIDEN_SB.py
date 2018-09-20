@@ -29,7 +29,7 @@ RIDEN = RIDENPoll(cl)
 INDUK = cl.profile.mid
 Rfu = [cl]
 RfuBot=[INDUK]
-Owner=["u805e9f30ea4da7b64a14e0f9cea0767c"]
+Owner=["ubefd5866671adb25495773e580835cf1"]
 RfuSekawan = Rfu + RfuBot + Owner
 
 contact = cl.getProfile()
@@ -82,7 +82,7 @@ Squad = {
     "Unban":False,
     "FancyFoto":False,
     "Admin": {
-        "u805e9f30ea4da7b64a14e0f9cea0767c":True #MID ADMIN TARO DISINI
+        "ubefd5866671adb25495773e580835cf1":True #MID ADMIN TARO DISINI
     },
 }
 
@@ -818,9 +818,24 @@ def RIDEN_FAST_USER(fast):
                         for target in targets:
                             try:
                                 cl.findAndAddContactsByMid(target)
-                                cl.createGroup("RIDEN SPAM GROUP",[target]) # KALAU MAU BUAT BANYAK SILAHKAN TAMBAHIN SESUKA KALIAN :>
-                                cl.createGroup("RIDEN SPAM GROUP",[target]) # HANYA SPAM VIA CONTACT
-                                cl.createGroup("RIDEN SPAM GROUP",[target])
+                                cl.createGroup("阿尔瓦安的儿子",[target]) # KALAU MAU BUAT BANYAK SILAHKAN TAMBAHIN SESUKA KALIAN :>
+                                cl.createGroup("阿尔瓦安的儿子",[target]) # HANYA SPAM VIA CONTACT
+                                cl.createGroup("阿尔瓦安的儿子",[target])
+                                cl.createGroup("阿尔瓦安的儿子",[target]) # KALAU MAU BUAT BANYAK SILAHKAN TAMBAHIN SESUKA KALIAN :>
+                                cl.createGroup("阿尔瓦安的儿子",[target]) # HANYA SPAM VIA CONTACT
+                                cl.createGroup("阿尔瓦安的儿子",[target])
+                                cl.createGroup("阿尔瓦安的儿子",[target]) # KALAU MAU BUAT BANYAK SILAHKAN TAMBAHIN SESUKA KALIAN :>
+                                cl.createGroup("阿尔瓦安的儿子",[target]) # HANYA SPAM VIA CONTACT
+                                cl.createGroup("阿尔瓦安的儿子",[target])
+                                cl.createGroup("阿尔瓦安的儿子",[target]) # KALAU MAU BUAT BANYAK SILAHKAN TAMBAHIN SESUKA KALIAN :>
+                                cl.createGroup("阿尔瓦安的儿子",[target]) # HANYA SPAM VIA CONTACT
+                                cl.createGroup("阿尔瓦安的儿子",[target])
+                                cl.createGroup("阿尔瓦安的儿子",[target]) # KALAU MAU BUAT BANYAK SILAHKAN TAMBAHIN SESUKA KALIAN :>
+                                cl.createGroup("阿尔瓦安的儿子",[target]) # HANYA SPAM VIA CONTACT
+                                cl.createGroup("阿尔瓦安的儿子",[target])
+                                cl.createGroup("阿尔瓦安的儿子",[target]) # KALAU MAU BUAT BANYAK SILAHKAN TAMBAHIN SESUKA KALIAN :>
+                                cl.createGroup("阿尔瓦安的儿子",[target]) # HANYA SPAM VIA CONTACT
+                                cl.createGroup("阿尔瓦安的儿子",[target])				
                                 cl.sendText(kirim,"Spam Invite ke " + korban + "\nSUCCESS..")
                                 Squad['SpamInvite'] = False
                             except:             
