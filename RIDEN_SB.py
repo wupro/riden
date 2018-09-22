@@ -10,9 +10,9 @@ import time, random, asyncio, timeit, sys, json, codecs, threading, glob, re, st
 
 print ("\n\n ---  WELCOME TO RFU SEKAWAN  ---\n")
 
-cl = RIDEN()
-#AcToken = "YOUR TOKEN"
-#cl = RIDEN(authTokenRFU=AcToken)
+#cl = RIDEN()
+AcToken = "Ex700r5aRtBS5FS9zISa.uLazHwsQ0ex+n15A/EBdIG.fg8qS1tyC2FYTJNaoOFSJwkGsQN2imCQTmT7p4wT1yc="
+cl = RIDEN(authTokenRFU=AcToken)
 cl.log("YOUR TOKEN : {}".format(str(cl.authToken)))
 channel = RIDENChannel(cl,cl.server.CHANNEL_ID['LINE_TIMELINE'])
 cl.log("CHANNEL TOKEN : " + str(channel.getChannelResult()))
