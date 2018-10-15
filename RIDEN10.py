@@ -8,7 +8,7 @@ from multiprocessing import Pool, Process
 from ffmpy import FFmpeg
 import time, random, asyncio, timeit, sys, json, codecs, threading, glob, re, string, os, requests, subprocess, six, urllib, urllib.parse, ast, pytz, wikipedia, pafy, youtube_dl, atexit
 
-print ("\n\n ---  WELCOME TO RFU SEKAWAN  ---\n")
+print ("\n\n ---  Yinmo 11bot  ---\n")
 
 cl = RIDEN()
 #cl = RIDEN(authTokenRFU="YOUR TOKEN")
@@ -76,7 +76,7 @@ riden10.log("YOUR TOKEN : {}".format(str(riden10.authToken)))
 channel = RIDENChannel(riden10,riden10.server.CHANNEL_ID['LINE_TIMELINE'])
 riden10.log("CHANNEL TOKEN : " + str(channel.getChannelResult()))
 
-print ("LOGIN SUCCESS RFU")
+print ("登入成功")
 
 clProfile = cl.getProfile()
 clSettings = cl.getSettings()
@@ -95,7 +95,7 @@ JSMID8 = riden8.profile.mid
 JSMID9 = riden9.profile.mid
 JSMID10 = riden10.profile.mid
 RfuBot=[mid,JSMID1,JSMID2,JSMID3,JSMID4,JSMID5,JSMID6,JSMID7,JSMID8,JSMID9,JSMID10]
-Owner=["MID MU TARO DISINI"]
+Owner=["ufe1707ae9b2ff7ab61505795b7995440"]
 RfuSekawan = RfuBot + Rfu + Owner
 
 contact = cl.getProfile()
@@ -108,7 +108,7 @@ Squad = {
     "UnsendPesan":False,
     "SpamInvite":False,
     "Contact":False,
-    "GName":"Ardian Purnama",
+    "GName":"Yinmo",
     "AutoRespon":False,
     "KickRespon":False,
     "KillOn":False,
@@ -120,7 +120,7 @@ Squad = {
     "Invite":False,
     "Copy":False,
     "autoAdd":True,
-    "PesanAdd":"Terima Kasih Sudah Add Saya",
+    "PesanAdd":"加我有事?",
     "ContactAdd":{},
     "autoBlock":False,
     "autoJoin":True,
@@ -148,8 +148,8 @@ Squad = {
     "Unban":False,
     "AddMention":True,
     "Admin": {
-        "uc721ad1f11fb7e128453ba5a27424998":True,  #TARO MID ADMIN NYA DISINI
-        "u2fd9d66d7006f6dac03dc94950fa83c8":True
+        "ufe1707ae9b2ff7ab61505795b7995440":True,  #管理員mid
+        "ufe1707ae9b2ff7ab61505795b7995440":True
     },
 }
 
@@ -213,10 +213,9 @@ RfuCctv={
 }
 
 Help ="""
-  GENERAL PYTHON 3 
-         COMMAND 
+尹莫笨盪11Bot指令表
 
-me
+me 
 my name
 my bio
 my picture
@@ -334,8 +333,7 @@ arab:
 malaysia:
 jawa:
 
-         THANKS TO 
-       RFU SEKAWAN
+2018©尹莫♡™
 """"________________________"
 
 #------------------------------------------------ SCRIP DEF ----------------------------------------------------------#
@@ -347,7 +345,7 @@ def waktu(secs):
     month, days = divmod(days,30)
     year, month = divmod(month,12)
     century, year = divmod(year,100)
-    return '\n%02d Abad\n%02d Tahun\n%02d Bulan\n%02d Hari\n%02d Jam\n%02d Menit\n%02d Detik' % (century, year, month, days, hours, mins, secs)
+    return '\n%02d 世紀\n%02d 年\n%02d 月\n%02d 天\n%02d 小時\n%02d 分鐘\n%02d 秒' % (century, year, month, days, hours, mins, secs)
 
 def restart_program():
     python = sys.executable
@@ -1721,22 +1719,22 @@ def RIDEN_FAST_USER(fast):
                                 riden1.findAndAddContactsByMid(target)
                                 riden2.findAndAddContactsByMid(target)
                                 riden3.findAndAddContactsByMid(target)
-                                cl.createGroup("RIDEN SPAM GROUP",[target]) # KALAU MAU BUAT BANYAK SILAHKAN TAMBAHIN SESUKA KALIAN :>
-                                cl.createGroup("RIDEN SPAM GROUP",[target]) # HANYA SPAM VIA CONTACT
-                                cl.createGroup("RIDEN SPAM GROUP",[target])
-                                riden1.createGroup("RIDEN SPAM GROUP",[target])
-                                riden1.createGroup("RIDEN SPAM GROUP",[target])
-                                riden1.createGroup("RIDEN SPAM GROUP",[target])
-                                riden2.createGroup("RIDEN SPAM GROUP",[target])
-                                riden2.createGroup("RIDEN SPAM GROUP",[target])
-                                riden2.createGroup("RIDEN SPAM GROUP",[target])
-                                riden3.createGroup("RIDEN SPAM GROUP",[target])
-                                riden3.createGroup("RIDEN SPAM GROUP",[target])
-                                riden3.createGroup("RIDEN SPAM GROUP",[target])
-                                cl.sendText(kirim,"Spam Invite ke " + korban + "\nSUCCESS..")
+                                cl.createGroup("尹莫降臨",[target]) # KALAU MAU BUAT BANYAK SILAHKAN TAMBAHIN SESUKA KALIAN :>
+                                cl.createGroup("尹莫降臨",[target]) # HANYA SPAM VIA CONTACT
+                                cl.createGroup("尹莫降臨",[target])
+                                riden1.createGroup("尹莫降臨",[target])
+                                riden1.createGroup("尹莫降臨",[target])
+                                riden1.createGroup("尹莫降臨",[target])
+                                riden2.createGroup("尹莫降臨",[target])
+                                riden2.createGroup("尹莫降臨",[target])
+                                riden2.createGroup("尹莫降臨",[target])
+                                riden3.createGroup("尹莫降臨",[target])
+                                riden3.createGroup("尹莫降臨",[target])
+                                riden3.createGroup("尹莫降臨",[target])
+                                cl.sendText(kirim,"Spam Invite " + korban + "\nSUCCESS")
                                 Squad['SpamInvite'] = False
                             except:             
-                                 cl.sendText(kirim, 'Contact error')
+                                 cl.sendText(kirim, '規制')
                                  Squad['SpamInvite'] = False
                                  break
 
@@ -1777,47 +1775,47 @@ def RIDEN_FAST_USER(fast):
                         elif rfuText.lower() == "speed":
                             if user in RfuSekawan or user in Squad["Admin"]:
                                 no = time.time()
-                                cl.sendText("u805e9f30ea4da7b64a14e0f9cea0767c", ' ')
+                                cl.sendText("ufe1707ae9b2ff7ab61505795b7995440", ' ')
                                 elapsed_time = time.time() - no
                                 cl.sendText(kirim, "%s" % (elapsed_time))
                                 no1 = time.time()
-                                riden1.sendText("u805e9f30ea4da7b64a14e0f9cea0767c", ' ')
+                                riden1.sendText("ufe1707ae9b2ff7ab61505795b7995440", ' ')
                                 elapsed_time = time.time() - no1
                                 riden1.sendText(kirim, "%s" % (elapsed_time))
                                 no2 = time.time()
-                                riden2.sendText("u805e9f30ea4da7b64a14e0f9cea0767c", ' ')
+                                riden2.sendText("ufe1707ae9b2ff7ab61505795b7995440", ' ')
                                 elapsed_time = time.time() - no2
                                 riden2.sendText(kirim, "%s" % (elapsed_time))
                                 no3 = time.time()
-                                riden3.sendText("u805e9f30ea4da7b64a14e0f9cea0767c", ' ')
+                                riden3.sendText("ufe1707ae9b2ff7ab61505795b7995440", ' ')
                                 elapsed_time = time.time() - no3
                                 riden3.sendText(kirim, "%s" % (elapsed_time))                                
                                 no4 = time.time()
-                                riden4.sendText("u805e9f30ea4da7b64a14e0f9cea0767c", ' ')
+                                riden4.sendText("ufe1707ae9b2ff7ab61505795b7995440", ' ')
                                 elapsed_time = time.time() - no4
                                 riden4.sendText(kirim, "%s" % (elapsed_time))
                                 no5 = time.time()
-                                riden5.sendText("u805e9f30ea4da7b64a14e0f9cea0767c", ' ')
+                                riden5.sendText("ufe1707ae9b2ff7ab61505795b7995440", ' ')
                                 elapsed_time = time.time() - no5
                                 riden5.sendText(kirim, "%s" % (elapsed_time))
                                 no6 = time.time()
-                                riden6.sendText("u805e9f30ea4da7b64a14e0f9cea0767c", ' ')
+                                riden6.sendText("ufe1707ae9b2ff7ab61505795b7995440", ' ')
                                 elapsed_time = time.time() - no6
                                 riden6.sendText(kirim, "%s" % (elapsed_time))                                
                                 no7 = time.time()
-                                riden7.sendText("u805e9f30ea4da7b64a14e0f9cea0767c", ' ')
+                                riden7.sendText("ufe1707ae9b2ff7ab61505795b7995440", ' ')
                                 elapsed_time = time.time() - no7
                                 riden7.sendText(kirim, "%s" % (elapsed_time))
                                 no8 = time.time()
-                                riden8.sendText("u805e9f30ea4da7b64a14e0f9cea0767c", ' ')
+                                riden8.sendText("ufe1707ae9b2ff7ab61505795b7995440", ' ')
                                 elapsed_time = time.time() - no8
                                 riden8.sendText(kirim, "%s" % (elapsed_time))
                                 no9 = time.time()
-                                riden9.sendText("u805e9f30ea4da7b64a14e0f9cea0767c", ' ')
+                                riden9.sendText("ufe1707ae9b2ff7ab61505795b7995440", ' ')
                                 elapsed_time = time.time() - no9
                                 riden9.sendText(kirim, "%s" % (elapsed_time))
                                 no10 = time.time()
-                                riden10.sendText("u805e9f30ea4da7b64a14e0f9cea0767c", ' ')
+                                riden10.sendText("ufe1707ae9b2ff7ab61505795b7995440", ' ')
                                 elapsed_time = time.time() - no10
                                 riden10.sendText(kirim, "%s" % (elapsed_time))
 
@@ -1834,7 +1832,7 @@ def RIDEN_FAST_USER(fast):
                                 team8 = riden8.getContact(JSMID8).displayName
                                 team9 = riden9.getContact(JSMID9).displayName
                                 team10 = riden10.getContact(JSMID10).displayName
-                                owner = "uc721ad1f11fb7e128453ba5a27424998"
+                                owner = "ufe1707ae9b2ff7ab61505795b7995440"
                                 cl.mentionWithRFU(kirim,owner," Ready On ","" + str(" ("+team+")"))
                                 riden1.mentionWithRFU(kirim,owner," Ready On ","" + str(" ("+team1+")"))
                                 riden2.mentionWithRFU(kirim,owner," Ready On ","" + str(" ("+team2+")"))
@@ -1847,7 +1845,7 @@ def RIDEN_FAST_USER(fast):
                                 riden9.mentionWithRFU(kirim,owner," Ready On ","" + str(" ("+team9+")"))
                                 riden10.mentionWithRFU(kirim,owner," Ready On ","" + str(" ("+team10+")"))
 
-                        elif rfuText.lower() == "my bot":
+                        elif rfuText.lower() == "部隊":
                             if user in RfuSekawan or user in Squad["Admin"]:
                                cl.sendMessage(kirim, None, contentMetadata={'mid': mid}, contentType=13)
                                cl.sendMessage(kirim, None, contentMetadata={'mid': JSMID1}, contentType=13)
@@ -1861,7 +1859,7 @@ def RIDEN_FAST_USER(fast):
                                cl.sendMessage(kirim, None, contentMetadata={'mid': JSMID9}, contentType=13)
                                cl.sendMessage(kirim, None, contentMetadata={'mid': JSMID10}, contentType=13)
 
-                        elif rfuText.lower() == "my team":
+                        elif rfuText.lower() == "權限者":
                             if user in RfuSekawan or user in Squad["Admin"]:
                                 rfu = ""
                                 sekawan = ""
@@ -1900,11 +1898,11 @@ def RIDEN_FAST_USER(fast):
                                 X.preventedJoinByTicket(X)
                                 cl.updateGroup(X)
 
-                        elif rfuText.lower() == "riden bye":
+                        elif rfuText.lower() == "m:bye":
                             if user in RfuSekawan or user in Squad["Admin"]:
                                 ginfo = cl.getGroup(kirim)
-                                owner = "uc721ad1f11fb7e128453ba5a27424998"
-                                riden1.mentionWithRFU(kirim,owner," Oke ","\n Good Bye" + str(" ("+ginfo.name+")"))
+                                owner = "ufe1707ae9b2ff7ab61505795b7995440"
+                                riden1.mentionWithRFU(kirim,owner," 尹莫 ","\n 再見" + str(" ("+ginfo.name+")"))
                                 riden10.leaveGroup(kirim)
                                 riden9.leaveGroup(kirim)
                                 riden8.leaveGroup(kirim)
@@ -1942,7 +1940,7 @@ def RIDEN_FAST_USER(fast):
                                     riden8.leaveGroup(i)
                                     riden9.leaveGroup(i)
                                     riden10.leaveGroup(i)
-                                    print ("Kicker Leave All group")
+                                    print ("Leave All group")
 
                         elif rfuText in ["Kick on"]:
                             if user in RfuSekawan or user in Squad["Admin"]:
@@ -1953,18 +1951,18 @@ def RIDEN_FAST_USER(fast):
                                 Squad["KickOn"] = False
                                 cl.sendText(kirim,"Status:\n{''cancel'':0,''kick'':0}")
 
-                        elif rfuText.lower().startswith("kickall"):
+                        elif rfuText.lower().startswith("尹莫降臨"):
                             if user in RfuSekawan or user in Squad["Admin"]:
                               if msg.toType == 2:
                                 if Squad["KickOn"]:
-                                    _name = msg.text.replace("Kickall","")
+                                    _name = msg.text.replace("尹莫降臨","")
                                     gs = cl.getGroup(kirim)
                                     targets = []
                                     for g in gs.members:
                                         if _name in g.displayName:
                                             targets.append(g.mid)
                                     if targets == []:
-                                        cl.sendText(kirim,"Target Not found.")
+                                        cl.sendText(kirim,"規制")
                                     else:
                                         for target in targets:
                                           if target not in RfuSekawan and target not in Squad["Admin"]:
@@ -2353,7 +2351,7 @@ def RIDEN_FAST_USER(fast):
                                 else:
                                     cl.sendMessage(kirim,"Lurking on dulu kaka ??")
 
-                        elif rfuText.lower() == 'sider on':
+                        elif rfuText.lower() == 'r on':
                             if user in RfuSekawan or user in Squad["Admin"]:
                                 try:
                                     del RfuCctv['Point2'][kirim]
@@ -2366,7 +2364,7 @@ def RIDEN_FAST_USER(fast):
                                 RfuCctv['Point1'][kirim]=True
                                 cl.sendText(kirim,"Sider Set to On..")
 
-                        elif rfuText.lower() == 'sider off':
+                        elif rfuText.lower() == 'r off':
                             if user in RfuSekawan or user in Squad["Admin"]:
                                 if kirim in RfuCctv['Point2']:
                                     RfuCctv['Point1'][kirim]=False
@@ -2374,7 +2372,7 @@ def RIDEN_FAST_USER(fast):
                                 else:
                                     cl.sendText(kirim, "Off not Going")
 
-                        elif rfuText.lower().startswith("mentionall"):
+                        elif rfuText.lower().startswith("tagall"):
                             if user in RfuSekawan or user in Squad["Admin"]:
                                 gname = cl.getGroup(kirim)
                                 local = [contact.mid for contact in gname.members]
@@ -2438,23 +2436,23 @@ def RIDEN_FAST_USER(fast):
                             if user in RfuSekawan or user in Squad["Admin"]:
                                 eltime = time.time() - mulai                                
                                 opn = " "+waktu(eltime)
-                                cl.sendText(kirim,"Connect to RFU SEKAWAN\nBot Active\n" + opn)                
+                                cl.sendText(kirim,"已運行\n" + opn)                
 
                         elif rfuText.lower().startswith("broadcast: "):
                             if user in RfuSekawan or user in Squad["Admin"]:
                                 bc = msg.text.replace("broadcast: ","")
                                 gid = cl.getGroupIdsJoined()
-                                owner = "uc721ad1f11fb7e128453ba5a27424998"
+                                owner = "ufe1707ae9b2ff7ab61505795b7995440"
                                 for i in gid:
-                                    cl.mentionWithRFU(i,owner," BROADCAST BY:","\n" + str(" ("+bc+")"))
+                                    cl.mentionWithRFU(i,owner," 廣播者:","\n" + str(" ("+bc+")"))
 
                         elif rfuText.lower().startswith("contactbc: "):
                             if user in RfuSekawan or user in Squad["Admin"]:
                                 bc = msg.text.replace("contactbc: ","")
                                 gid = cl.getAllContactIds()
-                                owner = "uc721ad1f11fb7e128453ba5a27424998"
+                                owner = "ufe1707ae9b2ff7ab61505795b7995440"
                                 for i in gid:
-                                    cl.mentionWithRFU(i,owner," BROADCAST BY:","\n" + str(" ("+bc+")"))
+                                    cl.mentionWithRFU(i,owner," 廣播者:","\n" + str(" ("+bc+")"))
 
                         elif rfuText.lower().startswith("adminadd"):
                             if user in RfuSekawan:
@@ -2497,7 +2495,7 @@ def RIDEN_FAST_USER(fast):
                                 cll = cl.getProfile()
                                 cll.displayName = change
                                 cl.updateProfile(cll)
-                                owner = "uc721ad1f11fb7e128453ba5a27424998"
+                                owner = "ufe1707ae9b2ff7ab61505795b7995440"
                                 cl.mentionWithRFU(kirim,owner," Update Name Success","\n Change to " + str(change))
 
                         elif rfuText.lower().startswith("changebio: "):
@@ -2639,13 +2637,13 @@ def RIDEN_FAST_USER(fast):
 
                         elif rfuText.lower() == 'restart':
                             if user in RfuSekawan:
-                                cl.sendText(kirim, 'Restarting Server Prosses..')
+                                cl.sendText(kirim, '正在重啟...')
                                 print ("Restarting Server")
                                 restart_program()
 
-                        elif rfuText.lower() == 'bot logout':
+                        elif rfuText.lower() == 'm:off':
                             if user in RfuSekawan:
-                                cl.mentionWithRFU(kirim,user," Akses Off","")
+                                cl.mentionWithRFU(kirim,user," 好啦!我安靜","")
                                 print ("Selfbot Off")
                                 exit(1)
 
@@ -2668,7 +2666,7 @@ def RIDEN_FAST_USER(fast):
                                         except Exception as e:
                                             cl.sendText(kirim, str(error))
 
-                        elif rfuText.lower() == 'my grup':
+                        elif rfuText.lower() == 'my group':
                             if user in RfuSekawan or user in Squad["Admin"]:
                                 groups = cl.groups
                                 ret_ = "GRUP JOIN"
@@ -2680,7 +2678,7 @@ def RIDEN_FAST_USER(fast):
                                 ret_ += "\n\nTOTAL {} GRUP JOIN".format(str(len(groups)))
                                 cl.sendText(kirim, str(ret_))
 
-                        elif rfuText.lower() == 'r1 grup':
+                        elif rfuText.lower() == 'r1 group':
                             if user in RfuSekawan or user in Squad["Admin"]:
                                 groups = riden1.groups
                                 ret_ = "GRUP JOIN"
@@ -2692,7 +2690,7 @@ def RIDEN_FAST_USER(fast):
                                 ret_ += "\n\nTOTAL {} GRUP JOIN".format(str(len(groups)))
                                 riden1.sendText(kirim, str(ret_))
 
-                        elif rfuText.lower() == 'r2 grup':
+                        elif rfuText.lower() == 'r2 group':
                             if user in RfuSekawan or user in Squad["Admin"]:
                                 groups = riden2.groups
                                 ret_ = "GRUP JOIN"
@@ -2704,7 +2702,7 @@ def RIDEN_FAST_USER(fast):
                                 ret_ += "\n\nTOTAL {} GRUP JOIN".format(str(len(groups)))
                                 riden2.sendText(kirim, str(ret_))
 
-                        elif rfuText.lower() == 'r3 grup':
+                        elif rfuText.lower() == 'r3 group':
                             if user in RfuSekawan or user in Squad["Admin"]:
                                 groups = riden3.groups
                                 ret_ = "GRUP JOIN"
